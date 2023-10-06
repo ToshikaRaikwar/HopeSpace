@@ -1,0 +1,60 @@
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:84vh;
+    padding: 20px;
+    background-image: url('./bglogin.jpg');
+    background-size:cover;
+    background-position: center;
+    height: 90.5vh;
+  }
+ 
+  .mail{
+margin-top: -40px;
+  }
+
+  .form-group{
+    margin-top: 5px;
+  }
+
+  .form-control{
+    margin-top:10px;
+    height: 50px;
+  }
+
+  *{
+    color: white;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 20px;
+   
+  }
+  
+.navigation{
+    
+    font-size: 20px;
+    font-weight: 600;
+    height: 60px;
+}
+
+.btn-group{
+   
+   margin-right: 2%;
+  right: 0px;
+ 
+}
+
+
+
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+
+.navbar{
+    display: flex;
+}
