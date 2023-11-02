@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapist Bio</title>
+    <script src="https://kit.fontawesome.com/0d8b1e5353.js" crossorigin="anonymous"></script>
+   
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"><script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Gabarito&family=Roboto+Slab&family=Roboto:wght@300&family=Satisfy&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Gabarito&family=Merriweather+Sans&family=Roboto+Slab&family=Roboto:wght@300&family=Satisfy&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Gabarito', serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .navigation {
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 100%;
+            font-size: 90%;
+            font-weight: 600;
+            height: 40px;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            width: 30px;
+            height: 30px;
+            margin-left: 20px;
+        }
+
+        footer {
+    background-color: #8d8d8d;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-section {
+    flex: 1 1 300px;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-section h2 {
+    color: white;
+    font-size: 18px;
+}
+
+.footer-section p {
+    color: white;
+    font-size: 14px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-section a:hover {
+    color: #4267B2;
+}
+
+.disclaimer {
+    margin-top: 20px;
+    color: #777;
+}
+
+.logo2{
+    width: 60%;
+}
+/* Copyright section */
+.footer-content .copyright {
+    flex-basis: 100%;
+    margin-top: 20px;
+    color: #777;
+}
+
+        .therapist-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+           
+            text-align: left;
+            margin-top: 40px;
+            color: #333;
+            font-size: 20px;
+            font-style: bold;
+            background-color: #f9f9f9;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .therapist-card img {
+            width: 150px;
+            border-radius: 50%;
+            float: left;
+            margin-top: 20px;
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+
+        .therapist-card h2 {
+            font-style: bold;
+            margin: 10px 0 5px;
+            text-align: center;
+        }
+
+        .therapist-card h3 {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .therapist-card p {
+            color: #555;
+        }
+
+        .therapist-card blockquote {
+            font-style: italic;
+            color: #777;
+            font-style: bold;
+            margin: 10px 0 0;
+        }
+
+        .book-appointment {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .book-appointment button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .book-appointment button:hover {
+            background-color: #45a049;
+        }
+        .green{
+            background-color: #b1f8b5;
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+           <img class="logo" src="logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Let's Talk</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Meet Therapist</a>
+              </li>
+            </ul>
+          </div>
+          <div class="btn-group" role="group">
+            <a href="./index.html">
+                <button type="button" class="btn btn-secondary btn-small">LogOut</button>
+              </a>
+          </div>
+        </nav>
+    </div>
+    <div class="therapist-card">
+        <div class="green">
+        <img src="doc4.jpg" alt="Therapist Photo">
+        <h2>Dr.Emily Turner</h2>
+        <h3>Psychiatrist</h3>
+        <p>Expertise: Adult Psychiatry, Psychopharmacology, Patient Advocacy</p>
+        <h3>Qualifications</h3>
+        <p>
+            Ph.D. in Clinical Psychology, University of ABC<br>
+            Licensed Clinical Psychologist (License #12345) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-brands fa-linkedin fa-2x"></i>&nbsp;&nbsp;<i class="fa-brands fa-square-twitter fa-2x"></i>
+        </p></div>
+        <h3>Experience</h3>
+        <p>
+            With over two decades of dedicated service in the field of clinical psychology, Dr. John Doe has worked extensively with individuals struggling with anxiety, depression, trauma, and various other mental health challenges. He has held positions at several prominent institutions, including the Serenity Clinic and the Hope Recovery Center, where he has led numerous therapy sessions and facilitated workshops on stress management and emotional well-being. Dr. Doe's practice is characterized by a compassionate and individualized approach that emphasizes holistic healing and long-term wellness.
+        </p>
+        <p>
+            Throughout his career, Dr. Doe has successfully treated more than 1000 patients, providing them with the tools and support necessary to navigate their psychological journeys and achieve a greater sense of fulfillment and peace.
+        </p>
+        <h3>Quote</h3>
+        <blockquote>"The only way to make sense out of change is to plunge into it, move with it, and join the dance."</blockquote>
+        <div class="book-appointment">
+            <button onclick="window.location.href='book_appointment.html'">Book Appointment</button>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h2>Contact Information</h2>
+            <p>HopeSpace</p>
+    
+            <p>Guna 473001, India</p>
+            <p>hope@space.care</p>
+            <p>+911234567890</p>
+        </div>
+        <div class="footer-section">
+            <h2>Quick Links</h2>
+            <p>For Corporates</p>
+            <p>For Therapists</p>
+            <p>Contact</p>
+            <p>About us</p>
+        </div>
+        <div class="footer-section">
+            <h2>Legal Stuff</h2>
+            <p>Disclaimer</p>
+            <p>Privacy Policy</p>
+            <p>Terms Of Service</p>
+        </div>
+        <div class="footer-section">
+          <img class="logo2" src="logo.png" alt="logo">
+      </div>
+    </div>
+
+    <div class="copyright">
+        <p>©HopeSpace. All rights reserved.</p>
+    </div>
+    </footer>
+</html>

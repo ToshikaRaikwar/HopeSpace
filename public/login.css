@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Gabarito&family=Roboto+Slab&family=Roboto:wght@300&family=Satisfy&display=swap');
+
+*{
+  font-family: 'Gabarito', serif;
+ 
+}
+
+
+
+.signup {
+  width: 40%;
+  margin: 10% auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  height: 120%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.intro h2 {
+  color: black;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.a {
+  font-size: 20px;
+  color: #333;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary {
+  width: 100%;
+  background-color: #6c757d;
+  color: #fff;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dice {
+  max-width: 30px;
+  max-height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .signup {
+    width: 80%;
+  }
+}
+*{
+  color: aliceblue;
+}
+
+.navigation{
+  position:fixed;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  font-size: 90%;
+  font-weight: 600;
+  height: 20px;
+  top: 0%;
+
+  
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value to control the transparency */
+  backdrop-filter: blur(10px);
+  
+  
+  z-index: 1000;
+
+}
+
+
+.btn-group{
+ 
+ margin-right: 2%;
+right: 0px;
+
+}
+
+.content{
+  margin-top: 20px;
+}
+
+.form-group{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+
+.logo{
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.logo2{
+  width: 60%;
+  }
+
+footer {
+  background-color: #8d8d8d;
+  padding: 20px;
+ margin-top: 265px;
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-section {
+  flex: 1 1 300px;
+  margin: 10px;
+  text-align: left;
+}
+
+.footer-section h2 {
+  color: white;
+  font-size: 18px;
+}
+
+.footer-section p {
+  color: white;
+  font-size: 14px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-section a:hover {
+  color: #4267B2;
+}
+
+.disclaimer {
+  margin-top: 20px;
+  color: #777;
+}
+
+
+
+
+
+/* Copyright section */
+.footer-content .copyright {
+  flex-basis: 100%;
+  margin-top: 20px;
+  color: #777;
+}
