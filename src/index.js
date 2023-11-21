@@ -2,17 +2,16 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const app = express();
-const port = 3000; // Define the port
-
-// Middleware
+const port = 3000; 
 app.use(bodyParser.json());
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-// Connect to MongoDB
-mongoose.connect('mongodb+srv://raikwartoshika:@cluster0.odr1lsv.mongodb.net/?retryWrites=true&w=majority', {
+
+
+mongoose.connect('mongodb+srv://raikwartoshika:@cluster0.6smby7l.mongodb.net/?retryWrites=true&w=majority', {
 
 useNewUrlParser: true,
   useUnifiedTopology: true
@@ -24,7 +23,7 @@ useNewUrlParser: true,
   console.error("Error connecting to database:", err);
 });
 
-// Create a user schema
+// USer Schema
 const userSchema = new mongoose.Schema({
   email: String,
   password: String,

@@ -17,35 +17,35 @@
     <div class="container">
         <header>Therapist's Appointment Request Form</header>
 
-        <form action="#">
+        <form action="payscript.php" method="post" id="appointmentForm">
             <div class="form first">
                 <div class="details personal">
                     <span class="title">Personal Details</span>
 
                     <div class="fields">
                         <div class="input-field">
-                            <label>First Name</label>
-                            <input type="text" placeholder="Enter your First Name" required>
+                            <label for="name">First Name</label>
+                            <input type="text" name="name" placeholder="Enter your First Name"  >
                         </div>
                         <div class="input-field">
                             <label>Last Name</label>
-                            <input type="text" placeholder="Enter your Last Name" required>
+                            <input type="text" placeholder="Enter your Last Name"  >
                         </div>
                         <div class="input-field">
                             <label>Date of Birth</label>
-                            <input type="date" placeholder="Enter your D.O.B" required>
+                            <input type="date" placeholder="Enter your D.O.B"  >
                         </div>
                         <div class="input-field">
-                            <label>Phone Number</label>
-                            <input type="tel" placeholder="Enter your Phone No." required>
+                            <label for="">Phone Number</label>
+                            <input type="tel" name="mobile" placeholder="Enter your Phone No."  >
                         </div>
                         <div class="input-field">
-                            <label>Address</label>
-                            <input type="text" placeholder="Enter your Address" required>
+                            <label>Email</label>
+                            <input type="text" name="Email" placeholder="Enter your mailid"  >
                         </div>
                         <div class="input-field">
                             <label>City</label>
-                            <input type="text" placeholder="Enter your City" required>
+                            <input type="text" placeholder="Enter your City"  >
                         </div>
                     </div>
                     
@@ -58,22 +58,22 @@
                     <div class="fields">
                         <div class="input-field">
                             <label>Appointment Date</label>
-                            <input type="date" placeholder="Enter Appointment date" required>
+                            <input type="date" placeholder="Enter Appointment date"  >
                         </div>
                         <div class="input-field">
                             <label>Appointment Time(Start)</label>
-                            <input type="time" placeholder="Enter start time" required>
+                            <input type="time" placeholder="Enter start time"  >
                         </div>
                         <div class="input-field">
                             <label>Appointment Time(End)</label>
-                            <input type="time" placeholder="Enter end time" required>
+                            <input type="time" placeholder="Enter end time"  >
                         </div>
                        
                        
                     </div>
 
                     <button class="nextBtn">
-                        <span class="btnText">Submit</span>
+                        <span class="btnText">Make Payment</span>
                         <i class="uil uil-navigator"></i>
                     </button>
                     
@@ -83,6 +83,31 @@
         </form>
     </div>
 
-    <script src="formscript.js"></script>
+    <script>
+        const form = document.getElementById("appointmentForm");
+        const nextBtn = form.querySelector(".nextBtn");
+        const allInput = form.querySelectorAll(".first input");
+    
+        nextBtn.addEventListener("click", (e) => {
+            e.preventDefault();
+            let isValid = true;
+    
+            allInput.forEach((input) => {
+                if (input.value.trim() === "") {
+                    isValid = false;
+                }
+            });
+    
+            if (isValid) {
+                // Set the payment amount dynamically based on your logic
+                const paymentAmount = 50000; // For example, 50000 paise (₹500)
+                document.getElementById("paymentAmount").value = paymentAmount;
+    
+                form.submit(); // Submit the form to payscript.php for payment processing
+            } else {
+                alert("Please fill in all required fields.");
+            }
+        });
+    </script>
 </body>
 </html>
