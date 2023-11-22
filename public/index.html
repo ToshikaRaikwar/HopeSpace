@@ -34,7 +34,7 @@
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Let's Talk</a>
+                <a class="nav-link" href="./chatapp/index.html">Let's Talk</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./therapist.html">Meet Therapist</a>
@@ -388,6 +388,18 @@
                         window.location.href = './login.html';
                     } else {
                         window.location.href = './therapist.html';
+                    }
+                });
+            });
+            document.addEventListener('DOMContentLoaded', function() {
+                const chatBtn = document.querySelector('.navbar-nav').children[2].children[0];
+                chatBtn.addEventListener('click', function(event) {
+                    if (!isLoggedIn) {
+                        event.preventDefault(); // Prevent the link from navigating
+                        alert('Please log in to access this page.');
+                        window.location.href = './login.html';
+                    } else {
+                        window.location.href = './chatapp/index.html';
                     }
                 });
             });
